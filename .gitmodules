@@ -21,7 +21,7 @@
 	url = https://github.com/moodle/moodle.git
 [submodule "zf2-orders"]
 	path = zf2-orders
-	url = ../zf2-orders.git
+	url = https://github.com/Err0-io/zf2-orders.git
 [submodule "NodeBB"]
 	path = NodeBB
 	url = https://github.com/NodeBB/NodeBB.git
