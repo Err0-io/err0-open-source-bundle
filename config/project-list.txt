@@ -1,0 +1,74 @@
+# err0.io Open Source Bundle - Project List
+#
+# This file lists all projects (submodules) in the test bundle.
+# One project per line. Lines starting with # are comments.
+# Empty lines are ignored.
+#
+# Format: <project-directory-name>
+#
+# The project name should match:
+# 1. The subdirectory name in the repository root
+# 2. The project name in token files: err0-<project>-*.json
+#
+# To add a new project:
+# 1. Add as git submodule: git submodule add <url> <project-name>
+# 2. Add project name to this file
+# 3. Generate token for project and place in tokens/
+# 4. Update config/submodule-mappings.txt with public URL
+
+# Android/Mobile Projects
+Signal-Android
+Signal-iOS
+Telegram
+Telegram-iOS
+UTM
+
+# Backend Frameworks (Java/JVM)
+spring-framework
+ktor
+ratpack
+tomcat
+
+# Backend Frameworks (Other)
+django
+rails
+vapor
+strapi
+
+# Blockchain/Cryptocurrency
+bitcoin
+
+# CMS/E-commerce
+WordPress
+drupal
+magento2
+moodle
+
+# DevOps/IoT
+kubernetes
+mender
+SmartThingsEdgeDrivers
+cerbos
+
+# .NET Projects
+Umbraco-CMS
+roslyn
+
+# Forums/Community
+NodeBB
+
+# Infrastructure
+postfix
+
+# Kotlin Libraries
+kotlinx.html
+
+# Machine Learning
+pytorch
+
+# Rust/Systems Programming
+servo
+leptos
+
+# Test/Example Projects
+zf2-orders

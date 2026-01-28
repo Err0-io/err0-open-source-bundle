@@ -1,0 +1,93 @@
+[submodule "spring-framework"]
+	path = spring-framework
+	url = https://github.com/spring-projects/spring-framework.git
+[submodule "django"]
+	path = django
+	url = https://github.com/django/django.git
+[submodule "roslyn"]
+	path = roslyn
+	url = https://github.com/dotnet/roslyn.git
+[submodule "kubernetes"]
+	path = kubernetes
+	url = https://github.com/kubernetes/kubernetes.git
+[submodule "magento2"]
+	path = magento2
+	url = https://github.com/magento/magento2.git
+[submodule "Umbraco-CMS"]
+	path = Umbraco-CMS
+	url = https://github.com/umbraco/Umbraco-CMS.git
+[submodule "moodle"]
+	path = moodle
+	url = https://github.com/moodle/moodle.git
+[submodule "zf2-orders"]
+	path = zf2-orders
+	url = ../zf2-orders.git
+[submodule "NodeBB"]
+	path = NodeBB
+	url = https://github.com/NodeBB/NodeBB.git
+[submodule "tomcat"]
+	path = tomcat
+	url = https://github.com/apache/tomcat.git
+[submodule "drupal"]
+	path = drupal
+	url = https://github.com/drupal/drupal.git
+[submodule "WordPress"]
+	path = WordPress
+	url = https://github.com/WordPress/WordPress.git
+[submodule "ratpack"]
+	path = ratpack
+	url = https://github.com/ratpack/ratpack.git
+[submodule "strapi"]
+	path = strapi
+	url = https://github.com/strapi/strapi.git
+[submodule "cerbos"]
+	path = cerbos
+	url = https://github.com/cerbos/cerbos.git
+[submodule "mender"]
+	path = mender
+	url = https://github.com/mendersoftware/mender.git
+[submodule "pytorch"]
+	path = pytorch
+	url = https://github.com/pytorch/pytorch.git
+[submodule "postfix"]
+	path = postfix
+	url = https://github.com/vdukhovni/postfix-mirror.git
+[submodule "bitcoin"]
+	path = bitcoin
+	url = https://github.com/bitcoin/bitcoin.git
+[submodule "leptos"]
+	path = leptos
+	url = https://github.com/leptos-rs/leptos.git
+[submodule "servo"]
+	path = servo
+	url = https://github.com/servo/servo.git
+[submodule "SmartThingsEdgeDrivers"]
+	path = SmartThingsEdgeDrivers
+	url = https://github.com/SmartThingsCommunity/SmartThingsEdgeDrivers.git
+[submodule "rails"]
+	path = rails
+	url = https://github.com/rails/rails.git
+[submodule "vapor"]
+	path = vapor
+	url = https://github.com/vapor/vapor.git
+[submodule "UTM"]
+	path = UTM
+	url = https://github.com/utmapp/UTM.git
+[submodule "Signal-iOS"]
+	path = Signal-iOS
+	url = https://github.com/signalapp/Signal-iOS.git
+[submodule "Telegram-iOS"]
+	path = Telegram-iOS
+	url = https://github.com/TelegramMessenger/Telegram-iOS.git
+[submodule "Signal-Android"]
+	path = Signal-Android
+	url = https://github.com/signalapp/Signal-Android.git
+[submodule "Telegram"]
+	path = Telegram
+	url = https://github.com/DrKLO/Telegram.git
+[submodule "ktor"]
+	path = ktor
+	url = https://github.com/ktorio/ktor.git
+[submodule "kotlinx.html"]
+	path = kotlinx.html
+	url = https://github.com/Kotlin/kotlinx.html.git

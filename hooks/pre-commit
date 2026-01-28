@@ -1,0 +1,53 @@
+#!/bin/bash
+# Pre-commit hook to prevent committing secrets
+# Protects against accidental exposure of tokens, credentials, and sensitive data
+
+# Check for token files being committed
+if git diff --cached --name-only | grep -qE '\\.json$' | grep -qE '(tokens/|config/)'; then
+    echo "ERROR: Token or config files cannot be committed" >&2
+    echo "Files matched:" >&2
+    git diff --cached --name-only | grep -E '\\.json$' | grep -E '(tokens/|config/)'
+    echo "" >&2
+    echo "These directories are protected:" >&2
+    echo "  - tokens/    (contains authentication tokens)" >&2
+    echo "  - config/    (may contain sensitive configuration)" >&2
+    echo "" >&2
+    echo "If this is intentional, review .gitignore patterns." >&2
+    exit 1
+fi
+
+# Check for .env files being committed
+if git diff --cached --name-only | grep -qE '^\\.env'; then
+    echo "ERROR: .env files cannot be committed" >&2
+    echo "Files matched:" >&2
+    git diff --cached --name-only | grep -E '^\\.env'
+    echo "" >&2
+    echo "Environment files (.env, .env.local, etc.) contain secrets." >&2
+    echo "Use .env.template for documentation instead." >&2
+    exit 1
+fi
+
+# Check for secrets in file content
+if git diff --cached | grep -qiE '(token_value|password|api.*key).*["\x27][a-zA-Z0-9_-]{20,}'; then
+    echo "WARNING: Possible secret detected in staged changes" >&2
+    echo "" >&2
+    git diff --cached | grep -iE '(token_value|password|api.*key)' | head -5
+    echo "" >&2
+    echo "This looks like it might contain a real secret (not a placeholder)." >&2
+    read -p "Are you sure you want to commit this? (y/N) " -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        echo "Commit cancelled." >&2
+        exit 1
+    fi
+fi
+
+# Check for common credential patterns
+if git diff --cached | grep -qE '(aws_access_key_id|aws_secret_access_key|BEGIN (RSA|DSA|EC|OPENSSH) PRIVATE KEY)'; then
+    echo "ERROR: AWS credentials or private keys detected in staged changes" >&2
+    echo "This is a critical security violation." >&2
+    exit 1
+fi
+
+# Success
+exit 0

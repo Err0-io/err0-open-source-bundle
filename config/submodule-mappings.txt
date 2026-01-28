@@ -1,0 +1,66 @@
+# Submodule URL Mappings
+#
+# This file maps each submodule to its public GitHub URL.
+# Format: <submodule-name> <public-github-url>
+#
+# Used by scripts/migrate-submodules.sh to convert relative URLs to public URLs.
+
+# Android/Mobile Projects
+Signal-Android https://github.com/signalapp/Signal-Android.git
+Signal-iOS https://github.com/signalapp/Signal-iOS.git
+Telegram https://github.com/DrKLO/Telegram.git
+Telegram-iOS https://github.com/TelegramMessenger/Telegram-iOS.git
+UTM https://github.com/utmapp/UTM.git
+
+# Backend Frameworks (Java/JVM)
+spring-framework https://github.com/spring-projects/spring-framework.git
+ktor https://github.com/ktorio/ktor.git
+ratpack https://github.com/ratpack/ratpack.git
+tomcat https://github.com/apache/tomcat.git
+
+# Backend Frameworks (Other)
+django https://github.com/django/django.git
+rails https://github.com/rails/rails.git
+vapor https://github.com/vapor/vapor.git
+strapi https://github.com/strapi/strapi.git
+
+# Blockchain/Cryptocurrency
+bitcoin https://github.com/bitcoin/bitcoin.git
+
+# CMS/E-commerce
+WordPress https://github.com/WordPress/WordPress.git
+drupal https://github.com/drupal/drupal.git
+magento2 https://github.com/magento/magento2.git
+moodle https://github.com/moodle/moodle.git
+
+# DevOps/IoT
+kubernetes https://github.com/kubernetes/kubernetes.git
+mender https://github.com/mendersoftware/mender.git
+SmartThingsEdgeDrivers https://github.com/SmartThingsCommunity/SmartThingsEdgeDrivers.git
+cerbos https://github.com/cerbos/cerbos.git
+
+# .NET Projects
+Umbraco-CMS https://github.com/umbraco/Umbraco-CMS.git
+roslyn https://github.com/dotnet/roslyn.git
+
+# Forums/Community
+NodeBB https://github.com/NodeBB/NodeBB.git
+
+# Infrastructure
+# Note: postfix is not on GitHub, using vdukhovni's mirror
+postfix https://github.com/vdukhovni/postfix-mirror.git
+
+# Kotlin Libraries
+kotlinx.html https://github.com/Kotlin/kotlinx.html.git
+
+# Machine Learning
+pytorch https://github.com/pytorch/pytorch.git
+
+# Rust/Systems Programming
+servo https://github.com/servo/servo.git
+leptos https://github.com/leptos-rs/leptos.git
+
+# Test/Example Projects
+# Note: zf2-orders appears to be an internal example project
+# This may need to be forked publicly or removed before public release
+zf2-orders INTERNAL_PROJECT_NEEDS_PUBLIC_FORK
