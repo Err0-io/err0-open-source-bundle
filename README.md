@@ -2,7 +2,7 @@
 
 # err0.io Open Source Test Bundle
 
-<img src="https://err0.io/assets/logo.svg" alt="err0.io logo" width="200"/>
+<img src="https://err0.io/img/logo3.png" alt="err0.io logo" width="200"/>
 
 ### Testing Infrastructure for 31 Major Open-Source Projects
 
